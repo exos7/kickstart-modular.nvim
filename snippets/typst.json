@@ -1,0 +1,41 @@
+{
+  "Latex Template": {
+    "prefix": "latex-typst-140",
+    "body": [
+      "#import \"@preview/rubber-article:0.5.0\": * ",
+      "#import \"@preview/showybox:2.0.4\": showybox",
+      "",
+      "#show: article",
+      "",
+      "#set enum(spacing: 15pt)",
+      "#set list(spacing: 15pt)",
+      "",
+      "#maketitle(",
+      "\t title: \"${1:Default Title}\",",
+      "\t authors: (\"Dale Sealtiel T. Flores \\n 2023-11373 \\n THX/WXY\",),",
+      ")"
+    ],
+    "description": "add latex template"
+  },
+  "Showybox Import": {
+    "prefix": "showy-ans",
+    "body": [
+      "#showybox(frame: (body-color: luma(80%)))[",
+      "\t*Answer:*$0",
+      "]"
+    ],
+    "description": "add answer box"
+  },
+  "enum-1": {
+    "prefix": "enum-1",
+    "body": [
+      "#enum[",
+      "\t$0",
+      "]"
+    ],
+    "description": "add enum with numbering 1"
+  },
+  "enum-a": {
+    "prefix": "enum-a",
+    "body": [
+      "#enum(numbering:\"(a)\
